@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get" target="_self">
+        <div>
+            <label for="U">Username</label>
+            <input type="text" name="username" id="U" autofocus required minlength="5" maxlength="20">
+        </div>
+        <br>
+        <div>
+            <label for="E">Email</label>
+            <input type="email" name="email" id="E" value="o@o.com" readonly>
+        </div>
+        <br>
+        <div>
+            <input type="hidden" name="token" id="T" value="b92f1fc2fce391ad7af633723afd3055">
+        </div>
+        <br>
+        <div>
+            <h2>Skills</h2>
+            <input type="checkbox" name="skills" id="PS" checked>
+            <label for="PS">Problem Solving</label>
+            <input type="checkbox" name="skills" id="L">
+            <label for="L">Logical Thinking</label>
+            <input type="checkbox" name="skills" id="A">
+            <label for="A">Analysis</label>
+            <input type="checkbox" name="skills" id="Pl">
+            <label for="Pl">Planning</label>
+        </div>
+        <div>
+            <h2>Job</h2>
+            <input type="radio" id="F" name="jobs" checked value="front">
+            <label for="F">Front-End Developer</label>
+            <input type="radio" id="B" name="jobs" value="back">
+            <label for="B">Back-End Developer</label>
+            <input type="radio" id="BA"name="jobs" value="business analyst">
+            <label for="BA">Business Analyst</label>
+            <input type="radio" id="P" name="jobs" value="project manager">
+            <label for="P">Project Manager</label>
+            <input type="radio" id="S" name="jobs" value="scurm master">
+            <label for="S">Scrum Master</label>
+        </div>
+
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Empty">
+    </form>
+</body>
+</html>  

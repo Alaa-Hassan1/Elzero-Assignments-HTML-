@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="test.py" method="post">
+        <div>
+            <label for="N">Username</label>
+            <br>
+            <input type="text" placeholder="Name" name="Username" id="N" required>
+        </div>
+        <hr>
+        <div>
+            <label for="P">Password</label>
+            <br>
+            <input type="password" placeholder="Use letter, number and symbols" name="password" id="P">
+        </div>
+        <hr>
+        <div>
+            <label for="M">Mobile</label>
+            <br>
+            <input type="tel" placeholder="+20100 (234) 123" name="mobile" id="M">
+        </div>
+        <hr>
+        <div>
+            <label for="E">Email</label>
+            <br>
+            <input type="email" placeholder="Email" name="email" id="E" required>
+        </div>
+        <hr>
+        <div>
+            <label for="S">Subject</label>
+            <br>
+            <input type="text" placeholder="Subject" name="subject" id="S">
+        </div>
+        <!-- -------------------------- Hidden Field --------------------------- -->
+        <input type="hidden" name="token" value="1234">
+        <br>
+        <input type="submit" value="Send Data">
+        <input type="reset" value="Empty Form">
+    </form>
+</body>
+
+</html>
